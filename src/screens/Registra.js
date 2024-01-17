@@ -1,4 +1,5 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState } from 'react';
+import {Link} from "react-router-dom";
 
 const expensiveCalculation=(num)=>{
     console.log("Calculating...");
@@ -33,6 +34,10 @@ function Registra() {
             <button onClick={increment}>+</button>
             <h2>Expensive Calculation</h2>
             {calculation}
+            <div>
+                {/* <button>Take Me To User List</button> */}
+                <Link to="/">Take to User List Screen</Link>
+            </div>
         </div>
     </div>
   )
